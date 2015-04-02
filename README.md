@@ -1,4 +1,5 @@
 # MavenToTomcatWithJersey
+Mavenを使って既存のリモート(ローカルも化)のtomcatにJerseyで作成したWebサービスをデプロイする
 
 ## 環境 
 - tomcat7
