@@ -35,6 +35,17 @@
 					<target>1.7</target>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.apache.tomcat.maven</groupId>
+				<artifactId>tomcat7-maven-plugin</artifactId>
+				<version>2.2</version>
+				<configuration>
+					<server>tomcat-localhost</server>
+					<port>8080</port>
+					<path>/helloMavenREST</path>
+				</configuration>
+			</plugin>
 		</plugins>
 	</build>
 </project>
