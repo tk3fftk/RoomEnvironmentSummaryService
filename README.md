@@ -1,5 +1,10 @@
 # MavenToTomcatWithJersey
 
+## 環境 
+- tomcat7
+- Maven 3.3.1
+- Java 1.8系
+
 ## tomcat側
 
 ### tomcat-users.xml
@@ -21,3 +26,7 @@
     </servers>
 
 - idはpom.xmlに書いたものと合わせること
+
+## 実行
+- goals
+ `package tomcat7:deploy`
