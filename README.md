@@ -31,3 +31,6 @@ Mavenを使って既存のリモート(ローカルも化)のtomcatにJerseyで�
 ## 実行
 - goals
  `package tomcat7:deploy`
+- deployではすでに存在している場合上書きしてくれない模様なので
+ `tomcat:redeploy`
+
