@@ -34,3 +34,9 @@ Mavenを使って既存のリモート(ローカルも化)のtomcatにJerseyで�
 - deployではすでに存在している場合上書きしてくれない模様なので
  `tomcat:redeploy`
 
+### Eclipse上でのエラー
+- Dmaven.multiModuleProjectDirectory system propery is not set
+ - `-Dmaven.multiModuleProjectDirectory=$M2_HOME` を`Window-> Preference -> Java -> Installed JREs -> Edit`の`Default VM arguments `に入力
+ - 参考: http://stackoverflow.com/questions/29330577/maven-3-3-1-eclipse-dmaven-multimoduleprojectdirectory-system-propery-is-not-s
+- 他にもJavaがない，みたいなことを言われるときは，`JREシステムライブラリー右クリック → プロパティ → 環境 → 互換性のあるJREにチェック`
+
