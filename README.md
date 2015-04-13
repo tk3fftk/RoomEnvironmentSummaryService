@@ -14,6 +14,8 @@ Mavenを使って既存のリモート(ローカルも化)のtomcatにJerseyで�
       <user username="user" password="pass" roles="manager-gui,manager-script" />
     </tomcat-users>
 
+- Managerまわりが入っていなかった場合
+    - yum install tomcat7-admin-webapps
 
 ## maven側
 ### setting.xml修正
@@ -32,7 +34,7 @@ Mavenを使って既存のリモート(ローカルも化)のtomcatにJerseyで�
 - goals
  `package tomcat7:deploy`
 - deployではすでに存在している場合上書きしてくれない模様なので
- `tomcat:redeploy`
+ `tomcat7:redeploy`
 
 ### Eclipse上でのエラー
 - Dmaven.multiModuleProjectDirectory system propery is not set
