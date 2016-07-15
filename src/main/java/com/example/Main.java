@@ -39,4 +39,14 @@ public class Main {
     return res.createSummary();
   }
 
+  @GET
+  @Produces("application/json")
+  @Path("/summary/line_post")
+  public Summary summaryLinePost() throws IOException {
+    RoomEnvironmentSummary res = new RoomEnvironmentSummary();
+    Summary summary = res.createSummary();
+    LinePost lp = new LinePost();
+    lp.Post(summary);
+    return summary;
+  }
 }
